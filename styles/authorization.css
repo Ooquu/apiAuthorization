@@ -16,7 +16,7 @@
   min-height: 100dvh;
   width: 100dvw;
   border-style: solid;
-  border-image-source: url('/images/background.png');
+  border-image-source: url('/apiAuthorization/images/background.png');
   border-image-slice: 40;
   border-image-width: 40px;
 }
