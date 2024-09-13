@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./template.css">
+    <link rel="stylesheet" href="./styles/authorization.css">
+
+    <script src="./scripts.js"></script>
+
+    <title>FLOWER - Авторизация</title>
+</head>
+
+<body>
+
+    <section class="authorization">
+        <div class="authorization-container">
+            <picture class="authorization__picture">
+                <source srcset="./images/logo/logo.avif" type="image/avif">
+                <source srcset="./images/logo/logo.webp" type="image/webp">
+                <img width="207" height="180" src="./images/logo/logo.png" alt="Логотип"
+                    class="authorization__picture-image">
+            </picture>
+            <form class="authorization__form" id="authForm" novalidate>
+                <fieldset class="authorization__fieldset">
+                    <legend class="authorization__legend">
+                        <h1 class="authorization__legend-title">Авторизация</h1>
+                    </legend>
+                    <div class="authorization-label-container">
+                        <label class="authorization__label" for="login">
+                            <svg class="authorization__label-svg authorization__label-svg--user" width="26" height="26"
+                                viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.33334 21.6667C4.33334 18.4167 8.66668 18.4167 10.8333 16.25C11.9167 15.1667 8.66668 15.1667 8.66668 9.75C8.66668 6.13925 10.1108 4.33333 13 4.33333C15.8893 4.33333 17.3333 6.13925 17.3333 9.75C17.3333 15.1667 14.0833 15.1667 15.1667 16.25C17.3333 18.4167 21.6667 18.4167 21.6667 21.6667"
+                                    stroke="#CFAA59" stroke-width="2" stroke-linecap="square" />
+                            </svg>
+                            <input type="email" class="authorization__input" id="login" name="login" required
+                                aria-required="true" placeholder="Email или телефон" autocomplete="username">
+                        </label>
+                        <label class="authorization__label" for="password">
+                            <svg class="authorization__label-svg authorization__label-svg--password" width="26"
+                                height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.75 17.3333V13H13" stroke="#CFAA59" stroke-width="2"
+                                    stroke-linecap="square" />
+                                <path
+                                    d="M7.58333 17.3333C9.97657 17.3333 11.9167 15.3932 11.9167 13C11.9167 10.6068 9.97657 8.66666 7.58333 8.66666C5.1901 8.66666 3.25 10.6068 3.25 13C3.25 15.3932 5.1901 17.3333 7.58333 17.3333Z"
+                                    stroke="#CFAA59" stroke-width="2" stroke-linecap="square" />
+                                <path d="M18.4167 16.25V13" stroke="#CFAA59" stroke-width="2" stroke-linecap="square" />
+                            </svg>
+
+                            <input type="password" class="authorization__input" id="password" name="password" required
+                                aria-required="true" placeholder="Пароль" autocomplete="current-password">
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="authorization__error-message d-none"></div>
+                <button type="submit" class="authorization__button">Войти</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
